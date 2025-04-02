@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/currencies', [CurrenciesController::class, 'index'])->name('currencies');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
