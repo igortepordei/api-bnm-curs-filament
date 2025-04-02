@@ -48,6 +48,7 @@ class CurrenciesResource extends Resource
                 Tables\Columns\TextColumn::make('char_code'),
                 Tables\Columns\TextColumn::make('nominal'),
                 Tables\Columns\TextColumn::make('value'),
+                Tables\Columns\TextColumn::make('date')->dateTime(),
             ])
             ->filters([
                 //
