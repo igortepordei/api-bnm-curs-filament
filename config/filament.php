@@ -1,6 +1,27 @@
 <?php
 
+use Filament\Panel;
+
 return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Panels Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Defines the panels that Filament will use in the application.
+    |
+    */
+
+    'default' => 'admin',
+
+    'panels' => [
+        'admin' => [
+            'id' => 'admin',
+            'path' => 'admin',
+            'resources' => [],
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------
